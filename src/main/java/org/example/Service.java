@@ -20,6 +20,7 @@ public class Service implements Writable,Readable {
             res.append(line).append("\n");
             line = reader.readLine();
         }
+        reader.close();
         return res.toString();
     }
 }
